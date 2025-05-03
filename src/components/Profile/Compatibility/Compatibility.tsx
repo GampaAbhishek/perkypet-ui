@@ -155,7 +155,7 @@ export default function Compatibility() {
           {compatibilityHeading.map((item, key) => {
             return (
               <button
-                className={`tab ${activeTab === item.name ? "active" : ""}`}
+                className={`tab ${activeTab === item.name ? "compatibility-active" : ""}`}
                 key={key}
                 onClick={() => setActiveTab(item.name as TabKey)}
               >
