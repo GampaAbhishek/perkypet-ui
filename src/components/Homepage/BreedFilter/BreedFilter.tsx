@@ -10,7 +10,7 @@ export default function BreedFilter({ onFilterChange }: BreedFilterProps) {
     Record<string, boolean>
   >({});
   const [selectedGroups, setSelectedGroups] = useState<string[]>([
-    "Sporting Group",
+    "Terrier Group",
   ]);
 
   const toggleSection = (section: string) => {

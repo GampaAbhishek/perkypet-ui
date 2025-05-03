@@ -4,50 +4,7 @@ import { useState } from "react";
 import BreedFilter from "../BreedFilter/BreedFilter";
 import BreedCard from "../BreedCard/BreedCard";
 import "./BreedsPage.css";
-
-// Mock data for breeds
-const breedData = [
-  {
-    id: "1",
-    name: "Affenpinscher",
-    image: "/assets/cat1.jpg",
-    description:
-      "Loyal, curious, and famously amusing, this almost-human toy dog is fearless out of all proportio...",
-    friendliness: 7,
-    energyLevel: 8,
-    trainability: 6,
-  },
-  {
-    id: "2",
-    name: "Affenpinscher",
-    image: "/assets/cat2.jpg",
-    description:
-      "Loyal, curious, and famously amusing, this almost-human toy dog is fearless out of all proportio...",
-    friendliness: 8,
-    energyLevel: 7,
-    trainability: 7,
-  },
-  {
-    id: "3",
-    name: "Affenpinscher",
-    image: "/assets/cat3.jpg",
-    description:
-      "Loyal, curious, and famously amusing, this almost-human toy dog is fearless out of all proportio...",
-    friendliness: 6,
-    energyLevel: 9,
-    trainability: 5,
-  },
-  {
-    id: "4",
-    name: "Affenpinscher",
-    image: "/assets/cat4.jpg",
-    description:
-      "Loyal, curious, and famously amusing, this almost-human toy dog is fearless out of all proportio...",
-    friendliness: 9,
-    energyLevel: 6,
-    trainability: 8,
-  },
-];
+import breedData from "./breedData";
 
 export default function BreedsPage() {
   const [filters, setFilters] = useState({});

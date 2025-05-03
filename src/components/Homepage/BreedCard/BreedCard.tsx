@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import "./BreedCard.css";
 
@@ -27,6 +25,7 @@ export default function BreedCard({
     setIsCompared(!isCompared);
   };
 
+  console.log("image: ", image);
   return (
     <div className="breed-card">
       <div className="breed-image">
