@@ -1,0 +1,96 @@
+.history-section {
+    padding: 3rem 2rem;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #10006d;
+    margin-bottom: 2rem;
+  }
+  
+  .breed-cards {
+    display: flex;
+    background-color: #504FC6;
+    color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .breed-text {
+    flex: 1;
+    min-width: 280px;
+    margin-right: 2rem;
+  }
+  
+  .breed-text h3 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .breed-text p{
+    margin-top: 20px;
+    width: 90%;
+    font-weight: 20px;
+  }
+  
+  .breed-chart {
+    flex: 1;
+    min-width: 280px;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    color: #1e1e1e;
+    text-align: center;
+  }
+  
+  .chart-img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+  
+  .history-facts {
+    display: flex;
+    background-color: #f4f2ff;
+    border-radius: 1rem;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .history-image {
+    width: 408px;
+    height: 312px;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+  
+  .history-text {
+    flex: 1;
+    font-size: 1rem;
+    color: #333;
+    padding: 40px;
+    width: min-content;
+  }
+  
+  .read-more {
+    margin-top: 1rem;
+    background-color: #3c3cff;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .read-more:hover {
+    background-color: #2a2adf;
+  }
