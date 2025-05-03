@@ -5,6 +5,7 @@ import BreedFilter from "../BreedFilter/BreedFilter";
 import BreedCard from "../BreedCard/BreedCard";
 import "./BreedsPage.css";
 import breedData from "./breedData";
+import BreedBackground from "../../../assets/homebackground.png";
 
 export default function BreedsPage() {
   const [filters, setFilters] = useState({});
@@ -41,6 +42,7 @@ export default function BreedsPage() {
       <div className="see-more-container">
         <button className="see-more-button">See More</button>
       </div>
+      <img src={BreedBackground} className="breedbackground" alt="bg" />
     </div>
   );
 }
