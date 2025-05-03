@@ -1,0 +1,65 @@
+.head-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 0 0 1rem 1rem;
+    margin: 2rem 0;
+    min-height: 80vh;
+    margin-top: 0rem;
+  }
+  
+  .head-content {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .head-title {
+    font-size: 115px;
+    font-weight: bold;
+    color: #000080;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+  }
+  
+  .head-description {
+    font-size: 16.96px; /* Adjusted font size */
+    font-weight: 400;   /* Set font weight */
+    line-height: 26.66px; /* Adjusted line height */
+    letter-spacing: -0.61px; /* Adjusted letter spacing */
+    color: #333;
+    max-width: 80%;
+    margin-left: 5rem;
+    width: 400px;
+}
+  
+  .head-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dog-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .head-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .head-content {
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+  
+    .head-description {
+      max-width: 100%;
+    }
+  }
+  
