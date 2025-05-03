@@ -52,11 +52,16 @@
   padding: 8px 16px;
 }
 
+.breed-select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .select-wrapper select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding-right: 2rem; /* adjust to fit your icon */
+  padding-right: 2rem;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -64,18 +69,18 @@
 }
 
 .select-wrapper::after {
-  content: ""; /* Unicode character for down arrow */
+  content: "";
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  pointer-events: none; /* Prevents the arrow from blocking clicks */
-  background-image: url("/assets/arrow-down.png"); /* Path to your icon */
-  background-size: cover; /* Ensures the icon covers the entire area */
-  background-repeat: no-repeat; /* Prevents the icon from repeating */
-  width: 12px; /* Set width of the icon */
-  height: 12px; /* Set height of the icon */
-  color: transparent; /* Optional: if you want to remove any text color */
+  pointer-events: none;
+  background-image: url("../../../assets/arrow-down.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  color: transparent;
 }
 
 .checkbox-group {

@@ -1,42 +1,46 @@
-import { useState } from "react"
-import "./BreedFilter.css"
+import { useState } from "react";
+import "./BreedFilter.css";
 
 interface BreedFilterProps {
-  onFilterChange: (filters: any) => void
+  onFilterChange: (filters: any) => void;
 }
 
 export default function BreedFilter({ onFilterChange }: BreedFilterProps) {
-  const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({})
-  const [selectedGroups, setSelectedGroups] = useState<string[]>([])
+  const [expandedSections, setExpandedSections] = useState<
+    Record<string, boolean>
+  >({});
+  const [selectedGroups, setSelectedGroups] = useState<string[]>([
+    "Sporting Group",
+  ]);
 
   const toggleSection = (section: string) => {
     setExpandedSections((prev) => ({
       ...prev,
       [section]: !prev[section],
-    }))
-  }
+    }));
+  };
 
   const handleGroupChange = (group: string) => {
     setSelectedGroups((prev) => {
       if (prev.includes(group)) {
-        return prev.filter((g) => g !== group)
+        return prev.filter((g) => g !== group);
       } else {
-        return [...prev, group]
+        return [...prev, group];
       }
-    })
-  }
+    });
+  };
 
   const handleSubmit = () => {
     onFilterChange({
       groups: selectedGroups,
-    })
-  }
+    });
+  };
 
   const handleClearAll = () => {
-    setSelectedGroups([])
-    setExpandedSections({})
-    onFilterChange({})
-  }
+    setSelectedGroups([]);
+    setExpandedSections({});
+    onFilterChange({});
+  };
 
   return (
     <>
@@ -58,7 +62,7 @@ export default function BreedFilter({ onFilterChange }: BreedFilterProps) {
           </div>
         </div>
 
-        <div className="filter-section">
+        <div className="filter-section filter-group-section">
           <label>Group</label>
           <div className="checkbox-group">
             <div className="checkbox-item">
@@ -129,10 +133,15 @@ export default function BreedFilter({ onFilterChange }: BreedFilterProps) {
           "Friendliness",
           "Saved",
         ].map((section) => (
-          <div key={section} className="filter-section">
-            <div className="section-header" onClick={() => toggleSection(section)}>
+          <div key={section} className="filter-section expandable-section">
+            <div
+              className="section-header"
+              onClick={() => toggleSection(section)}
+            >
               <label>{section}</label>
-              <button className="expand-btn">{expandedSections[section] ? "-" : "+"}</button>
+              <button className="expand-btn">
+                {expandedSections[section] ? "-" : "+"}
+              </button>
             </div>
             {expandedSections[section] && (
               <div className="section-content">
@@ -148,5 +157,5 @@ export default function BreedFilter({ onFilterChange }: BreedFilterProps) {
         </button>
       </div>
     </>
-  )
+  );
 }
