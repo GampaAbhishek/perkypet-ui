@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./BreedCard.css";
+import { useNavigate } from "react-router-dom";
 
 interface BreedCardProps {
   id: string;
@@ -20,13 +21,19 @@ export default function BreedCard({
   trainability,
 }: BreedCardProps) {
   const [isCompared, setIsCompared] = useState(false);
+  const navigate = useNavigate();
 
   const toggleCompare = () => {
     setIsCompared(!isCompared);
   };
 
+  const handleCardClick = () => {
+    // navigating to the profile page
+    navigate("/profile");
+  };
+
   return (
-    <div className="breed-card">
+    <div className="breed-card" onClick={() => handleCardClick()}>
       <div className="breed-image">
         <img src={image || "/placeholder.svg"} alt={name} />
       </div>

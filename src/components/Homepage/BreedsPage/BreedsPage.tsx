@@ -9,7 +9,6 @@ import BreedBackground from "../../../assets/homebackground.png";
 
 export default function BreedsPage() {
   const [filters, setFilters] = useState({});
-  console.log("filters: ", filters);
   const [breeds, setBreeds] = useState(breedData);
 
   const handleFilterChange = (newFilters: any) => {
