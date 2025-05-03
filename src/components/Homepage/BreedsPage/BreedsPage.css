@@ -1,0 +1,32 @@
+.breeds-page {
+    padding: 20px;
+  }
+  
+  .breeds-container {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+  }
+  
+  .filter-sidebar {
+    flex: 0 0 374px;
+  }
+  
+  .breeds-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .breeds-container {
+      flex-direction: column;
+    }
+  
+    .filter-sidebar {
+      flex: none;
+      width: 100%;
+    }
+  }
+  

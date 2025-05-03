@@ -1,0 +1,160 @@
+.breed-filter {
+  border-radius: 8px 8px 0px 0px;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  background-color: #f2f2f2;
+}
+
+.filter-content {
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.filter-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.clear-all-btn {
+  background: none;
+  border: none;
+  color: #3730a3;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.breed-select {
+  border-radius: 12px;
+  padding: 8px 16px;
+}
+
+.select-wrapper select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 2rem; /* adjust to fit your icon */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.select-wrapper::after {
+  content: ""; /* Unicode character for down arrow */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevents the arrow from blocking clicks */
+  background-image: url("/assets/arrow-down.png"); /* Path to your icon */
+  background-size: cover; /* Ensures the icon covers the entire area */
+  background-repeat: no-repeat; /* Prevents the icon from repeating */
+  width: 12px; /* Set width of the icon */
+  height: 12px; /* Set height of the icon */
+  color: transparent; /* Optional: if you want to remove any text color */
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-item input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  accent-color: #3730a3;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.expand-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.section-content {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.saved-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3730a3;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #2e279a;
+}

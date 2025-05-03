@@ -4,11 +4,11 @@
     justify-content: space-between;
     padding: 2rem;
     background-color: #f5f5f5;
-    border-radius: 0 0 1rem 1rem;
-    margin: 2rem 0;
+    border-radius: 0 0 1rem 1rem; 
+    margin: 0 0 2rem 0; 
     min-height: 80vh;
-    margin-top: 0rem;
-  }
+    padding-bottom: 0; 
+}
   
   .head-content {
     flex: 1;
@@ -42,7 +42,7 @@
   
   .dog-image {
     max-width: 100%;
-    height: auto;
+    height: 42rem;
     border-radius: 0.5rem;
   }
   

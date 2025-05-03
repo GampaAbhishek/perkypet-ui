@@ -91,7 +91,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
-  background-color: #f5f5f5;
   border-radius: 1rem;
   margin: 2rem 0;
   min-height: 80vh;
@@ -121,11 +120,11 @@
   justify-content: center;
 }
 
-.dog-image {
+/* .dog-image {
   max-width: 100%;
   height: auto;
   border-radius: 0.5rem;
-}
+} */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
