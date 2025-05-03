@@ -1,0 +1,146 @@
+.compatibility-container {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.compatibility-head-title {
+  font-family: Poppins;
+  font-weight: 600;
+  display: flex;
+  font-size: 56px;
+  justify-content: center;
+  color: #000080;
+}
+
+.compatibility-content {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  width: 96%;
+  height: 336px;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.compatibility-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  gap: 10px;
+  height: 272px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  vertical-align: middle;
+  border: 1px solid #e9e9e9;
+  border-radius: 12px;
+  padding: 22px 42px;
+  background-color: #fff;
+  color: #424242;
+  outline: none;
+}
+
+.active {
+  color: #fff;
+  background: linear-gradient(to right, #4443c8, #1413a6);
+}
+
+.main-cards {
+  background-color: #fafafa;
+  color: #ffffff;
+  height: 272px;
+  gap: 10px;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.compatibility-details {
+  height: 272px;
+  width: 48%;
+  border-radius: 13px;
+  color: #4c4c4c;
+}
+
+.affectionate-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header h2 {
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 20px;
+  color: #010072;
+}
+
+.card-header h3 {
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 20px;
+  color: #010072;
+}
+
+.card-subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.card-subtitle img {
+  width: 24px;
+  height: 24px;
+}
+.card-header span {
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.5px;
+  vertical-align: middle;
+}
+.rating-bar {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.rating-dot {
+  width: 79px;
+  height: 16px;
+  top: 103px;
+  left: 31px;
+  border-radius: 40px;
+  flex-grow: 1;
+  background: #3231bb;
+}
+.compatibility-description-card {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  gap: 10px;
+}
+
+.compatibility-sub-card {
+  height: 96px;
+  font-weight: 700;
+  border-radius: 13px;
+  color: #4c4c4c;
+  padding: 22px;
+  background-color: #fafafa;
+}
