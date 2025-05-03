@@ -8,7 +8,6 @@
     margin: 1rem 10rem 5rem 10rem;
     border-radius: 40px;
   }
-
   
   .app-download-section {
     display: flex;
@@ -30,7 +29,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: white;
+    color: #010072;
   }
   
   .app-download-content p {
@@ -49,11 +48,18 @@
     height: 40px;
     width: auto;
   }
+
+  .footer-advertisement{
+    margin: 1rem 5rem 5rem 10rem;
+  }
   
   .app-mockup {
     flex: 1;
     display: flex;
     justify-content: center;
+    background-image: url('../../assets/advanticebackgroundimage.png');
+    background-size: cover;
+    background-position: bottom;
   }
   
   .app-mockup img {
@@ -157,7 +163,37 @@
     text-decoration: underline;
   }
   
+  .footer-all-right {
+    padding-left: 200px;
+  }
+  
+  @media (max-width: 1200px) {
+    .footer {
+      margin: 1rem 5rem 3rem 5rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .footer {
+      margin: 1rem 2rem 2rem 2rem;
+      height: auto;
+    }
+  
+    .app-download-section {
+      padding: 3rem 1.5rem;
+    }
+  
+    .footer-all-right {
+      padding-left: 0;
+    }
+  }
+  
   @media (max-width: 768px) {
+    .footer {
+      margin: 1rem;
+      border-radius: 20px;
+    }
+  
     .app-download-section {
       flex-direction: column;
       text-align: center;
