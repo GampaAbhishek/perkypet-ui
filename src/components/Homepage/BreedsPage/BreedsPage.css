@@ -1,5 +1,8 @@
 .breeds-page {
     padding: 20px;
+    background-image: url('../../../assets/homebackground.png');
+    background-position: left bottom;
+    background-repeat: no-repeat;
   }
   
   .breeds-container {
@@ -30,3 +33,18 @@
     }
   }
   
+
+  .see-more-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .see-more-button{
+    background-color: #4443C8;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 32px;
+    cursor: pointer;
+    font-size: 18px;
+  }

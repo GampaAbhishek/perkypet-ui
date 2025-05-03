@@ -38,6 +38,9 @@ export default function BreedsPage() {
           ))}
         </div>
       </div>
+      <div className="see-more-container">
+        <button className="see-more-button">See More</button>
+      </div>
     </div>
   );
 }
