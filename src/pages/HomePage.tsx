@@ -1,4 +1,4 @@
-import HomeHead from "../components/Homepage/HomeHead";
+import HomeHead from "../components/Homepage/HomeHead/HomeHead";
 
 export default function HomePage() {
   return (

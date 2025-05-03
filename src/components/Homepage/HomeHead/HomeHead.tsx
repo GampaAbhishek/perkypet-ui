@@ -5,9 +5,9 @@ export default function HomeHead() {
   return (
     <div className="head-container">
       <div className="head-content">
-        <h1 className="head-title">Dog Breeds</h1>
+        <h1 className="head-title">Cat Breeds</h1>
         <p className="head-description">
-          This is the official list of all PerkyPet Dog Breeds
+          This is the official list of all PerkyPet Cat Breeds
         </p>
       </div>
       <div className="head-image">
