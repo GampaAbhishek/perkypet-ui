@@ -152,9 +152,11 @@ export default function BreedFilter({ onFilterChange }: BreedFilterProps) {
           </div>
         ))}
 
-        <button className="submit-btn" onClick={handleSubmit}>
-          Submit
-        </button>
+        <div className="filter-actions">
+          <button className="submit-btn" onClick={handleSubmit}>
+            Submit
+          </button>
+        </div>
       </div>
     </>
   );

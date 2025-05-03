@@ -10,6 +10,7 @@
   padding: 20px;
   width: 100%;
   max-width: 350px;
+  background-color: #fff;
 }
 
 .filter-header {
@@ -35,12 +36,20 @@
 
 .filter-section {
   margin-bottom: 20px;
+  border-radius: 16px;
 }
 
 .filter-section label {
   display: block;
   margin-bottom: 10px;
   font-weight: 500;
+  color: #333;
+}
+
+.filter-group-section {
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  padding: 15px;
 }
 
 .select-wrapper {
@@ -92,13 +101,56 @@
 .checkbox-item {
   display: flex;
   align-items: center;
+  border: 1px solid #f2f2f2;
+  width: max-content;
+  padding: 4px 8px;
+  border-radius: 32px;
 }
 
+/* Custom checkbox styling */
 .checkbox-item input[type="checkbox"] {
-  margin-right: 10px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-item label {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-item .checkbox-custom {
+  display: inline-block;
   width: 18px;
   height: 18px;
-  accent-color: #3730a3;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  position: relative;
+}
+
+.checkbox-item input[type="checkbox"]:checked ~ label .checkbox-custom {
+  background-image: url("../../../assets/tick-square.png");
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+
+.filter-actions{
+  display: flex;
+  justify-content: end;
+}
+
+.expandable-section {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 8px 16px;
 }
 
 .section-header {
@@ -106,6 +158,13 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  padding: 0px 8px;
+}
+
+.section-header label {
+  margin-bottom: 0;
+  font-size: 15px;
+  color: #333;
 }
 
 .expand-btn {
@@ -120,6 +179,7 @@
   cursor: pointer;
   font-size: 16px;
   line-height: 1;
+  color: #666;
 }
 
 .section-content {
@@ -149,7 +209,7 @@
 }
 
 .submit-btn {
-  width: 100%;
+  width: 40%;
   padding: 12px;
   background-color: #3730a3;
   color: white;
