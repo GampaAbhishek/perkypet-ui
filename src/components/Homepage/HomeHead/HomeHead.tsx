@@ -1,5 +1,5 @@
 import "./HomeHead.css";
-import DogBreed from "../../assets/dogbreed.png";
+import DogBreed from "../../../assets/dogbreed.png";
 
 export default function HomeHead() {
   return (
